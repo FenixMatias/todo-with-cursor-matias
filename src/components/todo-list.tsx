@@ -1,6 +1,18 @@
 import React, { useState, useEffect } from "react"
 import { db } from "@/lib/firebase"
-import { collection, addDoc, deleteDoc, doc, updateDoc, onSnapshot, query, orderBy } from "firebase/firestore"
+import { 
+  collection, 
+  addDoc, 
+  deleteDoc, 
+  doc, 
+  updateDoc, 
+  onSnapshot, 
+  query, 
+  orderBy,
+  QuerySnapshot,
+  DocumentData,
+  QueryDocumentSnapshot 
+} from "firebase/firestore"
 
 interface Todo {
   id: string;
